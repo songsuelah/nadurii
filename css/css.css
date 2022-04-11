@@ -69,24 +69,6 @@ body{
     color: #1E144B;
     overflow: hidden;
 }
-#head .inner .language_list .language1 div{
-    display: none;
-}
-#head .inner .language_list .language1.on{
-    width: 125px;
-    height: 80px;
-    text-align: center;
-    border-radius: 20px;
-    border: #1E144B 1px solid;
-    box-sizing: border-box;
-    color: #1E144B;
-}
-#head .inner .language_list .language1 .on{
-    display: block;
-}
-#head .inner .language_list .language1 .add{
-    display: block;
-}
 #head .inner .language_list .arrow_under{
     width: 15px;
     position: absolute;
@@ -147,26 +129,19 @@ body{
 #nav .nav1 .closs img{
    width: 35px;
 }
-#nav .menu1{
-    display: none;
-}
 #nav .menu{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    position: absolute;
     left: 365px;
-    background: #ffffff;
-
-    z-index: 999999;
-
+    display: none;
 }
 #nav .menu ul{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     padding: 0 15px;
-    position: relative;
-    left: 280px;
 }
 #nav .menu ul:nth-child(3){
     padding: 0 20px;
@@ -292,15 +267,11 @@ body{
     background: #FFF9F0;
 }
 #kball .inner{
+    overflow: hidden;
     padding-bottom: 100px;
     padding-top: 100px;
-    overflow: hidden;
 }
-#kball .box1{
-    width: 1440px;
-    position: relative;
 
-}
 #kball .inner h2{
     font-size: 2.2rem;
     margin-bottom: 50px;
@@ -311,86 +282,9 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
 }
-#kball .inner .kball1 p{
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    opacity: 0;
-    transition: width 0.5s, height 0.5s, opacity 0.5s;
-    
-}
 #kball .inner .kball1 div{
-    margin: 0px;
-    width: 88%;
-    position: relative;
+    margin: 0 30px;
 }
-#kball .inner .kball2{
-    display: none;
-}
-.slick-track{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-}
-#kball  .slick-list {padding:0}
-#kball .slick-slide img {
-    width: 100%;
-  }
-  #kball  .kball1  {margin:20px}
-  #kball .kball1  .slick-slide {margin:0 10px;padding:10px;height:auto;
-            }
-#kball .kball1 .slick-slide img {transition:.3s}
-#kball .kball1 .slick-slide.slick-active.slick-current img {
-      opacity: 1;
-      transform: scale(1.3);  }
-
-      #kball .kball1 .slick-slide.slick-active.slick-current:hover p{
-        width: 130%;
-        height: 130%;
-        opacity: 1;
-      }
-#kball .slick-prev, #kball .slick-next {
-        z-index:999999999;
-        position: absolute;
-        bottom: -140px;
-        border: none;
-        background: none;
-        color: transparent;
-        }
-#kball .slick-prev{
-    background-image: url(../images/linearrow_l.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 30px;
-    height: 100px;
-    left : 45%;
-}        
-#kball .slick-next{
-    background-image: url(../images/linearrow_r.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 30px;
-    height: 100px;
-    right: 47%;
-}
-#kball .slick-prev:before,#kball .slick-next:before {
-      color: black;
-    }
-
 /*#chois*/
 #chois{
     background: #F9E9D1;
@@ -483,7 +377,6 @@ body{
     border: 1px solid #1E144B;
     width: 815px;
     height: 520px;
-    overflow: hidden;
 }
 #utube .inner .right{
     width: 565px;
@@ -526,33 +419,19 @@ body{
     font-weight: 700;
     margin-bottom: 30px;
 }
-#utube .inner .right .ulist .for-slider{
+#utube .inner .right .ulist>div{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     position: absolute;
 }
-#utube .inner .right .ulist .for-slider div{
-
-    position: relative;
-    left: -10px;
-}
-#utube .inner .right .ulist .for-slider img{
+#utube .inner .right .ulist>div>div{
+    border: #1E144B 1px solid;
     width: 190px;
     height: 121px;
-    border: #1E144B 1px solid;
-    box-sizing: border-box;
-    position: relative;
-    left: 0;
+    margin-right: 60px;
 }
-.slick-list .slick-track{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 1000px;
-}
-
 
 /*#instar*/
 
@@ -592,46 +471,25 @@ body{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     z-index: 9999;
-    background-size: 40px;
 }
 
 /*#logo_list*/
 #logo_list{
-    background: #fff;
-    border-top: #1E144B 1px solid;
-    border-bottom: #1E144B 1px solid;
+    background: #F9E9D1;
 }
 #logo_list .inner>div{
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px 0;
+    width: 80%;
     position: relative;
+    left: 10%;
+    overflow: hidden;
 }
-
-#logo_list .slick-track{
-    padding: 20px 0;
-}
-#logo_list .slick-prev, #logo_list .slick-next {
-    z-index:999999999;
-    position: absolute;
-    bottom: -30px;
-    border: none;
-    background: none;
-    color: transparent;
-    }
-#logo_list .slick-prev{
-background-image: url(../images/linearrow_l.png);
-background-repeat: no-repeat;
-background-size: 100%;
-width: 30px;
-height: 100px;
-left : 0;
-}        
-#logo_list .slick-next{
-background-image: url(../images/linearrow_r.png);
-background-repeat: no-repeat;
-background-size: 100%;
-width: 30px;
-height: 100px;
-right: 0;
+#logo_list .inner>div>div{
+    margin: 0 45px;
 }
 /*#footet*/
 #footer {
@@ -641,15 +499,6 @@ right: 0;
 #footer>div{
     border-bottom: #1E144B 1px solid;
 
-}
-#footer .noties_list{
-    height: 25px;
-    overflow: hidden;
-    position: relative;
-}
-#footer .noties_list div{
-    position: relative;
-    top: -22px;
 }
 #footer .inner .ftop{
     display: flex;
@@ -662,7 +511,7 @@ right: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-between
 }
 #footer .inner .ftop .noties p{
     margin-right: 30px;
@@ -670,7 +519,6 @@ right: 0;
 }
 #footer .noties_list{
     width: 435px;
-    position: relative;
 }
 #footer .sns ul{
     display: flex;
@@ -683,38 +531,4 @@ right: 0;
 }
 #footer .sns img{
     width: 30px;
-}
-
-#footer .inner .fbot{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    position: relative;
-    padding-top: 30px;
-}
-#footer  .fbot .text ul{
-    position: relative;
-    left: 50px;
-}
-#footer  .fbot .text ul:first-child{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    margin-bottom: 30px;
-}
-#footer  .fbot .text ul:first-child li{
-    margin-right: 30px;
-}
-#footer  .fbot .text ul:first-child li p{
-    font-weight: 400;
-}
-#footer  .fbot .text ul:nth-child(2){
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 40%;
-    
 }

@@ -12,11 +12,32 @@
       <link href="./css/common.css" rel="stylesheet" type="text/css">
       <link href="./css/css.css" rel="stylesheet" type="text/css">
       <script src="./js/jquery-3.1.1.min.js"></script>
-      <script src="js/jquery-migrate-3.0.0.js"></script>  
-      <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
-      <script src="./js/main.js"></script>
       <script>
 
+        var text
+
+        var w = 875;
+
+        var slide;
+
+       
+        slide = setInterval(function(){
+            $('#slide1 .inner .slide > div:first-child').animate({
+              'margin-left':(w*(-1)) + 'px'},600,function(){
+                $('#slide1 .inner .slide').append($('#slide1 .inner .slide > div:first-child')); 
+                $('#slide1 .inner .slide > div:last-child').css('margin-left','0px');
+                
+               })//animate
+        },2500);
+        text = setInterval(function(){
+            $('#slide1 .inner .text > div:first-child').animate({
+              'opacity': (0)},600,function(){
+                $('#slide1 .inner .text').append($('#slide1 .inner .text > div:first-child')); 
+                $('#slide1 .inner .text > div:last-child').css('opacity', (1));
+                
+               })//animate
+        },2500);
+              
       </script>
   </head>
   <body>
@@ -55,35 +76,33 @@
           </ul>
           <button class="closs"><img src="./images/closs.png" alt="close"></button>
         </div>
-        <div class="menu1">
-          <div class="menu inner">
-            <ul>
-              <li><a href="#">추천코스</a></li>
-              <li><a href="#">테마여행</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">호텔/모텔</a></li>
-              <li><a href="#">펜션</a></li>
-              <li><a href="#">캠핑</a></li>
-              <li><a href="#">게스트하우스</a></li>
-              <li><a href="#">테마별</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">식사</a></li>
-              <li><a href="#">디저트</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">교통안내</a></li>
-              <li><a href="#">홍보동영상</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">리뷰게시판</a></li>
-              <li><a href="#">자유게시판</a></li>
-              <li><a href="#">포토게시판</a></li>
-              <li><a href="#">경북뉴스</a></li>
-            </ul>
-          </div>
+        <div class="menu inner">
+          <ul>
+            <li><a href="#">추천코스</a></li>
+            <li><a href="#">테마여행</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">호텔/모텔</a></li>
+            <li><a href="#">펜션</a></li>
+            <li><a href="#">캠핑</a></li>
+            <li><a href="#">게스트하우스</a></li>
+            <li><a href="#">테마별</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">식사</a></li>
+            <li><a href="#">디저트</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">교통안내</a></li>
+            <li><a href="#">홍보동영상</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">리뷰게시판</a></li>
+            <li><a href="#">자유게시판</a></li>
+            <li><a href="#">포토게시판</a></li>
+            <li><a href="#">경북뉴스</a></li>
+          </ul>
         </div>
       </nav>
       <section id="slide1">
@@ -115,25 +134,336 @@
               <div class="next_img">
                 <img src="./images/main_juwang.jpg" alt="주왕산">
               </div>
-          </div>
+          <div>
         </div>
       </section>
       <section id="kball">
         <div class="inner">
           <h2>경북 구석구석</h2>
-            <div class="box1">
-              <div class="kball1">
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-                <div><a href="#"><img src="./images/circle_s.png"><p><span>경주</span></p></a></div>
-              </div>
-            
+          <div class="kball1">
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
             </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="kblist">
+              <img src="./images/circle_s.png">
+              <p></p>
+            </div>
+            <div class="hover1">
+              <p></p>
+              <p></p>
+              <p></p>
+              <a href="#">
+                <img src="">
+              </a>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
       <section id="chois">
@@ -196,11 +526,7 @@
       <section id="utube">
         <div class="inner">
             <div class="left">
-              <div><img src="./images/main_juwang.jpg"></div>
-              <div><img src="./images/main_juwang.jpg"></div>
-              <div><img src="./images/main_juwang.jpg"></div>
-              <div><img src="./images/main_juwang.jpg"></div>
-              <div><img src="./images/main_juwang.jpg"></div>
+              
             </div>
             <div class="right">
               <div>
@@ -216,18 +542,19 @@
                     <p>#안동</p>
                     <p>#한옥마을</p>
                   </div>
-                </div>
+                <div>
               </div>
               <div class="ulist">
                 <p>경북나드리 유튜브의 다른 영상들</p>
-                <div class="for-slider">
-                  <div><img src="./images/main_juwang.jpg"></div>
-                  <div><img src="./images/main_juwang.jpg"></div>
-                  <div><img src="./images/main_juwang.jpg"></div>
-                  <div><img src="./images/main_juwang.jpg"></div>
-                  <div><img src="./images/main_juwang.jpg"></div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
             </div>
+          </div>
         </div>
       </section>
       <section id="instar">
@@ -254,25 +581,25 @@
       </section>
       <section id="logo_list">
         <div class="inner">
-          <div class="logo">
-            <div>
-              <img src="./images/andong_flist.jpg">
-            </div>
-            <div>
-              <img src="./images/gcto_flist.jpg">
-            </div>
-            <div>
-              <img src="./images/goldencity_flist.jpg">
-            </div>
-            <div>
-              <img src="./images/happykch_flist.jpg">
-            </div>
-            <div>
-              <img src="./images/ksbd_flist.jpg">
-            </div>
-            <div>
-              <img src="./images/pohang_flist.jpg">
-            </div>
+          <div>
+          <div>
+            <img src="./images/andong_flist.jpg">
+          </div>
+          <div>
+            <img src="./images/gcto_flist.jpg">
+          </div>
+          <div>
+            <img src="./images/goldencity_flist.jpg">
+          </div>
+          <div>
+            <img src="./images/happykch_flist.jpg">
+          </div>
+          <div>
+            <img src="./images/ksbd_flist.jpg">
+          </div>
+          <div>
+            <img src="./images/pohang_flist.jpg">
+          </div>
           </div>
         </div>
       </section>
@@ -282,13 +609,13 @@
               <div class="ftop">
                 <div class="noties">
                   <p>공지</p>
-                  <div class="noties_list" >
-                    <div><a href="#">[공지사항] 공지사항입니다. 공지사항</a></div>
-                    <div><a href="#">[공지사항] 공지사항입니다. 공지사항</a></div>
-                    <div><a href="#">[공지사항] 공지사항입니다. 공지사항</a></div>
-                    <div><a href="#">[공지사항] 공지사항입니다. 공지사항</a></div>
-                    <div><a href="#">[공지사항] 공지사항입니다. 공지사항</a></div>
-                    <div><a href="#">[공지사항] 공지사항입니다. 공지사항</a></div>
+                  <div class="noties_list">
+                    <div><a href="#"></a></div>
+                    <div><a href="#"></a></div>
+                    <div><a href="#"></a></div>
+                    <div><a href="#"></a></div>
+                    <div><a href="#"></a></div>
+                    <div><a href="#"></a></div>
                   </div>
                   <a href="#">더보기</a>
                 </div>
@@ -304,42 +631,42 @@
               </div>
             </div>
           </div>
-          <div class="inner">
-            <div class="fbot">
-              <div>
-                <img src="./images/head_logo.png">
-              </div>
-              <div class="text">
-                <ul>
-                  <li>
-                    <p><a href="#">관광불편신고</a></p>
-                  </li>
-                  <li>
-                    <p><a href="#">개인정보처리방침</a></p>
-                  </li>
-                  <li>
-                    <p><a href="#">저작권정책</a></p>
-                  </li>
-                  <li>
-                    <p><a href="#">이메일 무단수집거부</a></p>
-                  </li>
-                  <li>
-                    <p><a href="#">여행지 등록신청</a></p>
-                  </li>
-                </ul>
-                <ul>
-                  <li>경상북도 안동시 풍천면 도청대로 455</li>
-                  <li>관광문의 : 054-745-0753</li>
-                  <li>e-mail : gbnadri@gmail.com</li>
-                  <li>홈페이지문의 : 054-740-7361</li>
-                  <li>Copyright ⓒ 2020 Gyeongsangbuk-do all rights reserved.</li>
-                </ul>
-              </div>
-              <div>
-                <img src="./images/wa_logo.png">
-              </div>
-            </div>
+        <div class="inner">
+          <div class="fbot">
+          <div>
+            <img src="./images/head_logo.png">
           </div>
+          <div>
+            <ul>
+              <li>
+                <p><a href="#">관광불편신고</a></p>
+              </li>
+              <li>
+                <p><a href="#">개인정보처리방침</a></p>
+              </li>
+              <li>
+                <p><a href="#">저작권정책</a></p>
+              </li>
+              <li>
+                <p><a href="#">이메일 무단수집거부</a></p>
+              </li>
+              <li>
+                <p><a href="#">여행지 등록신청</a></p>
+              </li>
+            </ul>
+            <ul>
+              <li>경상북도 안동시 풍천면 도청대로 455</li>
+              <li>관광문의 : 054-745-0753</li>
+              <li>e-mail : gbnadri@gmail.com</li>
+              <li>홈페이지문의 : 054-740-7361</li>
+              <li>Copyright ⓒ 2020 Gyeongsangbuk-do all rights reserved.</li>
+            </ul>
+          </div>
+          <div>
+            <img src="./images/wa_logo.png">
+          </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
