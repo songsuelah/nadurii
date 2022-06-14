@@ -152,7 +152,7 @@ centerPadding: '0px',  //중앙에 슬라이드가 보여지는 모드에서 pad
         arrows: true,
         dots: false,
         infinite : true,
-        centerPadding: '00px',  //중앙에 슬라이드가 보여지는 모드에서 padding값
+        centerPadding: '0px',  //중앙에 슬라이드가 보여지는 모드에서 padding값
       });
 
     
