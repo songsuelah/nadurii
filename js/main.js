@@ -98,7 +98,8 @@ $(function(){
       $('.kball1').slick({
 centerMode: true,
 slidesToShow: 5,
-
+dots: false,
+centerPadding: '0px',  //중앙에 슬라이드가 보여지는 모드에서 padding값
 });
 
       $('.left').slick({
@@ -113,7 +114,7 @@ slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.left',
         dots: false,
-        arrows: true,
+        arrows: false,
         centerMode: true,
         focusOnSelect: true,
       });
@@ -142,7 +143,7 @@ slidesToShow: 5,
 
 
       $('#logo_list .logo').slick({
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -151,6 +152,7 @@ slidesToShow: 5,
         arrows: true,
         dots: false,
         infinite : true,
+        centerPadding: '00px',  //중앙에 슬라이드가 보여지는 모드에서 padding값
       });
 
     
