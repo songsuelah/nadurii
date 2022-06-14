@@ -515,6 +515,11 @@ body{
     overflow: hidden;
     margin: 0;
 }
+#utube .slick-slide img {
+    display: block;
+    right: 400px;
+    position: relative;
+}
 #utube .inner .right{
     width: 565px;
 }
